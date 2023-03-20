@@ -4,13 +4,21 @@ body {
 }
 
 ul {
-  margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
+h1, ul, p {
+  margin: 0px;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header-bg {
@@ -88,4 +96,63 @@ a {
     padding: 8px 12px;
     font-size: 14px;
   }
+}
+
+.introducao-bg {
+  background: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+}
+
+.introducao h1 span {
+  color: #ffbb00;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.introducao a {
+  padding: 16px 32px;
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
