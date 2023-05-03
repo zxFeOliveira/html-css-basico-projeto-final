@@ -6,11 +6,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .botao {
-  padding: 16px 32px;
   display: inline-block;
+  padding: 16px 32px;
   background: linear-gradient(#ffbf00, #f2a50c);
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   color: var(--cor-p5);
@@ -45,11 +46,11 @@
   height: 10px;
   margin-left: 12px;
   background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
 }
 
 .botao.seta:hover::after {
-  transform: translateX(8px);
-  transition: .3s;
+  transform: translateX(4px);
 }
 
 @media (max-width: 600px) {
@@ -78,11 +79,15 @@
   color: var(--cor-0);
 }
 
-/* títulos internos */
+/* titulo internas */
 .titulo-bg {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--cor-11);
+}
+
+.titulo {
+  background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
 }
 
 .titulo p {
@@ -94,7 +99,6 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   .titulo p {
     font-size: 1rem;
     text-transform: lowercase;
